@@ -1,3 +1,5 @@
+Ingredients list using React. Part of a React Udemy course.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
