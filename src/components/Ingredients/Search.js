@@ -9,7 +9,7 @@ const Search = React.memo(props => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (enteredFilter === inputRef.current.value) {
-        const query = enteredFilter.length === 0 ? '' : `orderBy="title"&equalTo="${enteredFilter}"`;
+        const query = enteredFilter.length === 0 ? '' : `?orderBy="title"&equalTo="${enteredFilter}"`;
         fetch('https://react-hooks-26b43.firebaseio.com/ingredients.json' + query)
         .then(res => res.json())
         .then(data => {
